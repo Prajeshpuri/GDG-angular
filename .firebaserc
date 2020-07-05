@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-session-63eab": {
+      "hosting": {
+        "choices-app": [
+          "angular-session-63eab"
+        ]
+      }
+    }
+  }
+}

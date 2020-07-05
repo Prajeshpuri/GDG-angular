@@ -1,0 +1,21 @@
+<div>
+
+    <p>{{ timer }}</p>
+
+    <form [formGroup]="choicesForm" (ngSubmit)="submitForm()">
+ 
+        <input formControlName="name" placeholder="Enter choice name....">
+      
+        <button [disabled]="!choicesForm.valid" type="submit">Submit</button>
+       
+    </form>
+    
+    
+    <div>
+        <ul>
+            <li *ngFor="let choice of choicesList" (click)="upvote(choice)">
+                {{ choice.name }} | {{ choice.votes }}
+              </li>         
+        </ul>
+    </div>
+</div>
