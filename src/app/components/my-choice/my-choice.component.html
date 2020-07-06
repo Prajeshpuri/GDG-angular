@@ -1,12 +1,12 @@
 <div>
 
-    <p>{{ timer }}</p>
+    <!-- <p>{{ timer }}</p> -->
 
     <form [formGroup]="choicesForm" (ngSubmit)="submitForm()">
  
         <input formControlName="name" placeholder="Enter choice name....">
       
-        <button [disabled]="!choicesForm.valid" type="submit">Submit</button>
+        <button [disabled]="!choicesForm.valid" type="submit" class="button">Submit</button>
        
     </form>
     
@@ -14,7 +14,7 @@
     <div>
         <ul>
             <li *ngFor="let choice of choicesList" (click)="upvote(choice)">
-                {{ choice.name }} | {{ choice.votes }}
+                {{ choice.name }} <span class="votes"> {{ choice.votes }} </span>
               </li>         
         </ul>
     </div>
