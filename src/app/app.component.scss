@@ -1,0 +1,33 @@
+footer {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+span {
+  background-color: #5a5a5a;  
+  color: whitesmoke;
+  font-size: 16px;
+  display: block;
+  padding-top: 10px;
+  text-align: center;
+
+  a {
+    background-color: #5a5a5a; 
+    color: #00ffff;
+    // text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: #ffee00;
+  }
+}
+a{
+    color: #45e24a;
+}

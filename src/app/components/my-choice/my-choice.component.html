@@ -1,10 +1,14 @@
 <div>
 
     <!-- <p>{{ timer }}</p> -->
-
+    <p>It can be anything like Food, Place or Person  
+        <br><br>
+       You can add your item and also vote for existing items. 
+    </p>
+    <br>
     <form [formGroup]="choicesForm" (ngSubmit)="submitForm()">
  
-        <input formControlName="name" placeholder="Enter choice name....">
+        <input formControlName="name" placeholder="Enter Here">
       
         <button [disabled]="!choicesForm.valid" type="submit" class="button">Submit</button>
        
@@ -13,6 +17,7 @@
     
     <div>
         <ul>
+            <li class="head">Items <span class="votes">votes</span></li>
             <li *ngFor="let choice of choicesList" (click)="upvote(choice)">
                 {{ choice.name }} <span class="votes"> {{ choice.votes }} </span>
               </li>         

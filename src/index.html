@@ -8,6 +8,29 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBESxWnl74d8wKX6MMexJY5bRLf4cb5qL0",
+    authDomain: "angular-session-63eab.firebaseapp.com",
+    databaseURL: "https://angular-session-63eab.firebaseio.com",
+    projectId: "angular-session-63eab",
+    storageBucket: "angular-session-63eab.appspot.com",
+    messagingSenderId: "53965664427",
+    appId: "1:53965664427:web:0547c19617f83fb52787ee",
+    measurementId: "G-MLXRD49WT4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <app-root></app-root>
 </body>
 </html>
