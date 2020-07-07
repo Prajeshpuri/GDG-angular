@@ -15,12 +15,27 @@
     </form>
     
     
-    <div>
+    <!-- <div>
         <ul>
             <li class="head">Items <span class="votes">votes</span></li>
             <li *ngFor="let choice of choicesList" (click)="upvote(choice)">
                 {{ choice.name }} <span class="votes"> {{ choice.votes }} </span>
               </li>         
         </ul>
+    </div> -->
+
+
+
+    <div>
+        <table>
+            <tr>
+                <td class="head">Items</td>
+                <td class="votes">Votes</td>
+            </tr>
+            <tr *ngFor="let choice of choicesList" (click)="upvote(choice)">
+                <td> {{ choice.name }} </td>
+                <td class="votes"> {{ choice.votes }}</td>
+            </tr>
+        </table>
     </div>
 </div>
