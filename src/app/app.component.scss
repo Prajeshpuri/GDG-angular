@@ -1,4 +1,6 @@
-
+h1{
+  font-family: 'Lora', serif;
+}
 footer {
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -13,9 +15,10 @@ footer {
 span {
   background-color: #5a5a5a;  
   color: whitesmoke;
-  font-size: 80%;
+  // font-size: 80%;
+  font-size: 2vh;
   display: block;
-  padding-top: 10px;
+  padding-top: 5px;
   text-align: center;
 
   a {
